@@ -1,0 +1,36 @@
+.tenure-input {
+  margin: 0.5rem 0rem;
+}
+
+.tenure-input__title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.tenure-input__button-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tenure-input__button {
+  height: 3rem;
+  width: 6rem;
+  border-radius: 2rem;
+  border: 0px;
+  background-color: hsl(0, 0%, 88%);
+  cursor: pointer;
+}
+
+.tenure-input__button:hover {
+  background-color: hsl(0, 0%, 77%);
+}
+
+.tenure-input__button:active,
+.tenure-input__button-selected {
+  background-color: hsl(193, 82%, 55%);
+  color: white;
+}
+
+.tenure-input__button > span {
+  font-size: 0.8rem;
+}

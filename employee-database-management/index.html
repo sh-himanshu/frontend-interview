@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="container">
+        <div class="navbar">
+          <h1>Employee Database Management</h1>
+          <button id="add-employee-btn" class="button-grey">Add Employee</button>
+        </div>
+
+        <div id="add-employee-dialog">
+          <div class="add-employee-container">
+            <h3>Add a new employee</h3>
+            <form id="add-employee-form">
+              <div class="input-group">
+                <input type="text" name="firstName" placeholder="First name" id="firstName" />
+                <input placeholder="Last name" type="text" name="lastName" id="lastName" />
+              </div>
+
+              <input
+                type="text"
+                placeholder="Profile cover image URL"
+                name="imageUrl"
+                id="imageUrl"
+              />
+
+              <input placeholder="Email" type="email" name="email" id="email" />
+              <input
+                type="tel"
+                name="contactNumber"
+                id="contactNumber"
+                maxlength="10"
+                placeholder="Phone number"
+              />
+              <input type="number" name="age" id="age" maxlength="3" placeholder="Age" />
+              <input type="number" name="salary" id="salary" placeholder="Salary" />
+              <input placeholder="Address" name="address" id="address" />
+
+              <div class="input-group">
+                <label id="dob-label" for="dob"><span>Date of birth</span></label>
+                <input type="date" name="dob" id="dob" />
+              </div>
+              <button class="button-grey" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <div id="content-container">
+          <div id="employee-list"></div>
+
+          <div id="employee-information"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

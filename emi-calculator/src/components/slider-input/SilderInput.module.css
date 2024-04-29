@@ -1,0 +1,60 @@
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  row-gap: 0.8rem;
+}
+
+.input-container > label {
+  font-weight: 600;
+}
+
+.input-container > h4 {
+  text-decoration: underline;
+  margin: 0.5rem 0rem;
+}
+
+.slider-label {
+  font-weight: 600;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 12px; /* Specified height */
+  background: hsl(193, 82%, 55%); /* Grey background */
+  outline: none; /* Remove outline */ /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+  border-radius: 1rem;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 27px; /* Set a specific slider handle width */
+  height: 27px; /* Slider handle height */
+  background: white; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border: 3px hsl(193, 82%, 44%) solid;
+  border-radius: 100%;
+}
+
+.slider::-moz-range-thumb {
+  width: 27px; /* Set a specific slider handle width */
+  height: 27px; /* Slider handle height */
+  background: white; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border: 3px hsl(193, 82%, 44%) solid;
+  border-radius: 100%;
+}

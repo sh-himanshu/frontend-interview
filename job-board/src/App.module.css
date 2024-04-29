@@ -1,0 +1,15 @@
+.container {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0px auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.title {
+  margin-top: 1rem;
+  color: #ff5517;
+}

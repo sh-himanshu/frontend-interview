@@ -1,0 +1,21 @@
+.btn {
+  background-color: #ff5517;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  border: 0px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  user-select: none;
+}
+
+.btn:hover {
+  background-color: #e84d14;
+}
+
+.btn:active {
+  background-color: #e84d14;
+  scale: 97%;
+}

@@ -1,0 +1,33 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 2px black solid;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.grid__tile {
+  width: 6rem;
+  height: 6rem;
+  border: 2px black solid;
+  cursor: pointer;
+}
+
+.grid__tile:hover {
+  border: 2px rgb(15, 34, 21) solid;
+}
+
+.grid__tile:active {
+  background-color: rgb(12, 94, 23);
+}
+
+.grid__tile-disabled {
+  border: 0px;
+  opacity: 0%;
+  pointer-events: none;
+}
+
+.grid__tile-active {
+  background-color: rgb(12, 94, 23);
+  pointer-events: none;
+}

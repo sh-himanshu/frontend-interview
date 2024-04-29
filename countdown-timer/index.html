@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="timer-container">
+        <h3>Countdown Timer</h3>
+        <form id="timer-form">
+          <div id="timer-input">
+            <div>
+              <label for="hours">Hours</label>
+              <input value="00" type="number" name="hours" id="hours" />
+            </div>
+            <span class="seperator"> : </span>
+            <div>
+              <label for="minutes">Minutes</label>
+              <input value="00" type="number" name="minutes" id="minutes" />
+            </div>
+            <span class="seperator"> : </span>
+            <div>
+              <label for="seconds">Seconds</label>
+              <input value="00" type="number" name="seconds" id="seconds" />
+            </div>
+          </div>
+        </form>
+
+        <div id="timer-controls">
+          <button class="continue-btn">Continue</button>
+          <button class="reset-btn">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
