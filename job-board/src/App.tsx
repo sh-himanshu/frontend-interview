@@ -63,7 +63,11 @@ const App = () => {
         (loading ? (
           <Spinner />
         ) : (
-          <Button onClick={() => loadMoreJobs(5, jobs, jobsInView)} text="Load more jobs" />
+          <Button
+            disabled={loading}
+            onClick={() => loadMoreJobs(5, jobs, jobsInView)}
+            text="Load more jobs"
+          />
         ))}
     </div>
   );

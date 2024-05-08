@@ -1,0 +1,36 @@
+.theme-toggle {
+  appearance: none;
+  height: 2rem;
+  width: 4rem;
+  background-color: rgb(203, 203, 203);
+  border-radius: 1rem;
+  position: relative;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.theme-toggle::before {
+  content: '';
+  height: 1.4rem;
+  width: 1.4rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  position: absolute;
+  margin: 0.3rem;
+}
+
+.theme-toggle:checked:before {
+  content: '';
+  height: 1.4rem;
+  width: 1.4rem;
+  background-color: rgb(170, 170, 170);
+  border-radius: 1rem;
+  position: absolute;
+  margin: 0.3rem;
+  cursor: pointer;
+  right: 0;
+}
+
+.theme-toggle:checked {
+  background-color: rgb(34, 34, 34);
+}
